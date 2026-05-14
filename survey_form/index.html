@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h2>GeeksForGeeks Survey Form</h2>
+
+    <form id="survey-form">
+        <label for="name">Name</label>
+        <input 
+            id="name" 
+            type="text" 
+            name="name"
+            placeholder="Enter your name"
+        >
+
+        <label for="email">Email</label>
+        <input 
+            id="email" 
+            type="email" 
+            name="email"
+            placeholder="Enter your email"
+        >
+
+        <label for="age">Age</label>
+        <input 
+            id="age"
+            type="number"
+            name="age"
+            placeholder="Enter your age"
+        >
+
+        <label for="role">Which option describes you?</label>
+        <select name="role" id="role" >
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend GeeksForGeeks to a friend?</p>
+        <div class="radio-container">
+            <input 
+                id="yes" 
+                type="radio"
+                name="answer"
+                value="yes"
+            >
+            <label for="yes">Yes</label>            
+        </div>
+
+        <div class="radio-container">
+            <input 
+                id="no" 
+                type="radio"
+                name="answer"
+                value="no"
+            >        
+            <label for="no">No</label>            
+        </div>
+
+        <div class="radio-container">
+            <input 
+                id="maybe" 
+                type="radio"
+                name="answer"
+                value="maybe"
+            >
+            <label for="maybe">Maybe</label>            
+        </div>
+
+
+        <p>Languages and Frameworks known (Check all that apply)</p>
+
+        <div class="checkbox-container">
+            <input 
+                id="c"
+                type="checkbox" 
+                name="c"
+                value="c"
+            >
+            <label for="cpp">C</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="cpp"
+                type="checkbox" 
+                name="cpp"
+                value="cpp"
+            >
+            <label for="cpp">C++</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="cs"
+                type="checkbox" 
+                name="cs"
+                value="cs"
+            >
+            <label for="cs">C#</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="java"
+                type="checkbox" 
+                name="java"
+                value="java"
+            >
+            <label for="java">Java</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="react"
+                type="checkbox" 
+                name="react"
+                value="react"
+            >
+            <label for="react">React</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="angular"
+                type="checkbox" 
+                name="angular"
+                value="angular"
+            >
+            <label for="angular">Angular</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="django"
+                type="checkbox" 
+                name="django"
+                value="django"
+            >
+            <label for="django">Django</label>            
+        </div>
+
+        <div class="checkbox-container">
+            <input 
+                id="spring"
+                type="checkbox" 
+                name="spring"
+                value="spring"
+            >
+            <label for="spring">Spring</label>            
+        </div>
+
+        <label for="comment">Any comments or suggestions</p>
+        <textarea id="comment" name="comment"></textarea>
+
+        <button type="submit" onSubmit="resetForm()">Submit</button>
+    </form>
+</body>
+</html>

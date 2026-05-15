@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An Event Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Roboto Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
      <!-- Header -->
@@ -17,8 +21,8 @@
     <nav>
         <a href="#about-the-event">About</a>
         <a href="#event-schedule">Schedule</a>
-        <a href="#">Speakers</a>
-        <a href="#">Contact</a>
+        <a href="#meet-the-speakers">Speakers</a>
+        <a href="#contact-us">Contact</a>
     </nav>
 
     <!-- Main -->
@@ -42,8 +46,13 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td>9:00 AM</td>
+                        <td>Opening Keynote</td>
+                        <td>GeeksforGeeks Coding Platform</td>
+                    </tr>
+                    <tr class="second-column">
                         <td>10:30 AM</td>
-                        <td>Understanding AI and Machine Learning</td>
+                        <td class="second">Understanding AI and Machine Learning</td>
                         <td>Mr. Arvind Kumar</td>
                     </tr>
                     <tr>
@@ -51,7 +60,7 @@
                         <td>lunch Break</td>
                         <td>-</td>
                     </tr>
-                    <tr>
+                    <tr class="second-column">
                         <td>2:00 PM</td>
                         <td>Exploring the Future of Cloud Computing</td>
                         <td>Ms. Neha Gupta</td>
@@ -63,12 +72,10 @@
         <!-- Meet the Speakers Section -->
         <section id="meet-the-speakers">
             <h2>Meet the Speakers</h2>
-            <ul>
-                <li><span>Dr. Radhika Sharma:</span> Ai Expert and Researcher</li>
-                <li><span>Mr. Arvind Kumar:</span> Senior Data Scientist at TechWave</li>
-                <li><span>Ms. Neha Gupta:</span> Cloud Computing Specialist at CloudTech</li>
-                <li><span>Mr. Sandeep Reedy:</span> Full Stack Developer and Open-Source Contributor</li>
-            </ul>
+            <p><span>Dr. Radhika Sharma:</span> Ai Expert and Researcher</p>
+            <p><span>Mr. Arvind Kumar:</span> Senior Data Scientist at TechWave</p>
+            <p><span>Ms. Neha Gupta:</span> Cloud Computing Specialist at CloudTech</p>
+            <p><span>Mr. Sandeep Reedy:</span> Full Stack Developer and Open-Source Contributor</p>
         </section>
 
         <!-- Contact Us Section -->

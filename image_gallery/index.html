@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>Image Gallery</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Image Gallery -->
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240311163321/Types-of-Wastes-(Banner).webp" 
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240311125007/Invertebrates-(Banner).webp"
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240311125007/Invertebrates-(Banner).webp"
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)" 
+            src= "https://media.geeksforgeeks.org/wp-content/uploads/20240311120816/GBlog-banner.webp"
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240308123700/Layers-of-Atmosphere-Banner-02.webp" 
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240307180031/List-of-Rocket-Launching-Stations-in-India---banner.webp"
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240215134226/Russia-Banner-copy-2.webp"
+            alt="Image"
+        >
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240226155245/girl-dog-names-banner.webp" 
+            alt="Image">
+    </div>
+    <div class="img-container">
+        <img 
+            onclick="openModal(this.src)"
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20240215151423/Types-of-Microscope-(Banner).png"
+            alt="Image"
+        >
+    </div>
+
+    <div class="modal" id="modal">
+        <span onclick="closeModal()">&times;</span>
+        <img id="modal-image">
+    </div>
+</body>
+</html>

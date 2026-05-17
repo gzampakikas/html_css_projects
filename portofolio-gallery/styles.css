@@ -1,0 +1,64 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 50px;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.h1-bg {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    border: 1px solid #8d99ae;
+}
+
+.card:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 10px 5px 5px mediumaquamarine;
+}
+
+img {
+    max-width: 200px;
+    padding: 10px;
+}
+
+h2, p {
+    padding: 10px;
+}
